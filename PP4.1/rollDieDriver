@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class rollDieDriver
+{
+    int numOfSides;
+    //main method
+    public static void main(String args[])
+    {
+        Scanner keyboard = new Scanner(System.in);
+        //
+        System.out.println("How many sides would you like on the die? ");
+        int numOfSides = keyboard.nextInt();
+
+        Dice userDie = new Dice(numOfSides);
+        userDie.rollThem();
+        System.out.println(userDie.toString());
+    } //end of Main
+} // end of class
