@@ -1,0 +1,37 @@
+import java.util.Random;
+
+public class Dice
+{
+   //instantiate private vars
+    //default constructor
+    //full constructor
+    //brain method (roll)
+    //toString
+    int result;
+    private int dieSides = 0;
+
+    Random gen = new Random();
+
+    public Dice(int dieSide)
+    {
+        this.dieSides = dieSide;
+    } //rollDie constructor
+
+    public static int finalNum()
+    {
+        return finalNum();
+    }
+
+    public void rollThem()
+    {
+        int num = gen.nextInt(dieSides);
+        this.result = num;
+    }
+
+    public String toString()
+    {
+        String output;
+        output =  "The number you generated is " + result;
+        return output;
+    } //toString
+} //end class rollDie
